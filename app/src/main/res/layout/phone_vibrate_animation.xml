@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/outerRippleCardView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cardCornerRadius="100dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/phoneIconCardView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:clipChildren="true"
+        android:visibility="gone"
+        app:cardCornerRadius="50dp" />
+
+    <ImageView
+        android:id="@+id/phoneIconImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/materialcalleranimation"
+        android:scaleType="centerCrop"
+        android:src="@drawable/material_phone_icon" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/innerRippleCardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cardCornerRadius="40dp" />
+</FrameLayout>
